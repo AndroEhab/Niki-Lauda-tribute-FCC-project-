@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #222;
+  line-height: 1.5;
+  margin: 0;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s;
+}
+
+a {
+  color: rgb(74, 107, 196);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "Teko", sans-serif;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.tribute {
+  margin: auto;
+  max-width: 1300px;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.tribute-section {
+  margin-bottom: 100px;
+}
+
+.tribute-quote {
+  padding: 10px;
+  width: fit-content;
+  background-color: #eee;
+  margin: 0 auto 25px auto;
+}
+
+.tribute-quote q {
+  font-size: 15px;
+}
+
+.tribute-img {
+  margin: 0 0 100px 0;
+}
+.tribute-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+
+.tribute-img figcaption {
+  color: #666;
+  font-size: 15px;
+}
+
+.about-img img {
+  height: auto;
+  max-width: 100%;
+}
+
+.trophies-table {
+  margin: auto;
+  width: 100%;
+}
+
+.trophies-table td,
+.trophies-table th {
+  padding: 15px;
+  text-align: center;
+}
+
+.trophies-table tr:nth-child(odd) {
+  background-color: #222;
+  color: #fff;
+}
+
+.tribute-gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-img {
+  width: 312.5px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.tribute-gallery img {
+  cursor: pointer;
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  transition: width 0.2s;
+  margin-left: -50%;
+  margin-right: -50%;
+  object-fit: cover;
+}
+
+.tribute-gallery img:hover {
+  width: 120%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #666;
+  opacity: 0.8;
+}
+
+.image-fixed {
+  position: relative;
+  width: 90vw;
+  height: 100vh;
+}
+
+.image-fixed img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.exit-btn {
+  cursor: pointer;
+  position: fixed;
+  right: 25px;
+  top: 25px;
+  background-color: rgb(78, 78, 78);
+  color: #fff;
+  padding: 5px 15px;
+}
+
+.exit-btn span {
+  margin: auto;
+  line-height: 2;
+}
+
+@media only screen and (min-width: 992px) {
+  .tribute-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about-img {
+    padding-right: 30px;
+    width: 40%;
+  }
+  .about-article {
+    text-align: left;
+    width: 60%;
+  }
+}
